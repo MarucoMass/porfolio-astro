@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import SocialPill from '../components/SocialPill.astro';
+import Linkedin from '../components/icons/Linkedin.astro';
+import Github from '../components/icons/Github.astro';
+import Mail from '../components/icons/Mail.astro';
+import ExperienceList from '../components/ExperienceList.astro';
+import Jobs from '../components/Jobs.astro';
+---
+
+<Layout 
+	title="Welcome to Astro."
+	description="Welcome to Astro."
+>
+	<main class="px-8">
+		<SectionContainer class="pt-56">
+			<h1 class="uppercase text-9xl font-bold text-balance flex flex-col items-start">
+				<span class="text-2xl ml-2">Hey, aquí</span>
+				Mario Mass
+			</h1>
+
+			<h2 class="text-3xl text-balance mt-4">Desarrollador Web profesional | Coordinador educativo</h2>
+
+			<nav class="flex gap-4 mt-12 flex-wrap">
+				<SocialPill href="https://linkedin.com/in/mario-massonnat">
+				  <Linkedin class="size-4 md:size-6" />
+				  LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/MarucoMass">
+				  <Github class="size-4 md:size-6" />
+				  GitHub
+				</SocialPill>
+				<SocialPill href="mailto:miduga@gmail.com">
+				  <Mail class="size-4 md:size-6" />
+				  mariomass.dev@gmail.com
+				</SocialPill>
+			  </nav>
+		</SectionContainer>
+
+		<SectionContainer class="">
+			<p class="text-6xl font-extrabold text-pretty mb-16"><span class="text-[#2394e5]">+3 años</span> de trayectoria transformando ideas en sitios web y desarrollando interfaces intuitivas </p>
+			<p class="text-6xl font-extrabold text-pretty"><span class="text-[#2394e5]">+1300 personas</span> aprendieron desarrollo web bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar" </p>
+		</SectionContainer>
+
+		
+
+		<SectionContainer id="experiencia" class="">
+			<h1 class="uppercase text-9xl font-bold">Experiencia</h1>
+
+			<article class="grid grid-cols-2 relative mt-32">
+				<h2 class="text-6xl font-semibold sticky h-fit top-[15dvh] uppercase">Laboral</h2>
+				<ExperienceList />
+					<!-- <Jobs /> -->
+	
+			</article>
+		</SectionContainer>
+
+
+	</main>
+</Layout>
+
+<style>
+	/* main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	} */
+	
+</style>
