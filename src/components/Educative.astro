@@ -31,7 +31,7 @@ const EXPERIENCIE = [
   },
 ]
 
-const {class:className} = Astro.props;
+const {class:className, param} = Astro.props;
 ---
 
 
@@ -40,10 +40,10 @@ const {class:className} = Astro.props;
 </ol>   -->
 <ol class={`relative border-s border-gray-200 ml-3 ${className}`}>
     {
-      EXPERIENCIE.map((experience) => (
-        <li class="mb-10 ms-4">
-          <ExperienceItem {...experience} />
-        </li>
-      ))
-    }
+        EXPERIENCIE.map((experience) => { 
+          <li class="mb-10 ms-4">
+            <ExperienceItem {...experience} />
+          </li>
+        })
+      }
   </ol>

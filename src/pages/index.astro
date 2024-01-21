@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import SocialPill from '../components/SocialPill.astro';
-import Linkedin from '../components/icons/Linkedin.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
 import Github from '../components/icons/Github.astro';
 import Mail from '../components/icons/Mail.astro';
 import ExperienceList from '../components/ExperienceList.astro';
@@ -13,18 +14,23 @@ import Jobs from '../components/Jobs.astro';
 	title="Welcome to Astro."
 	description="Welcome to Astro."
 >
-	<main class="px-8">
-		<SectionContainer class="pt-56">
-			<h1 class="uppercase text-9xl font-bold text-balance flex flex-col items-start">
-				<span class="text-2xl ml-2">Hey, aquí</span>
+	<main class="grid grid-cols-1 md:grid-cols-2 px-10 max-w-7xl mx-auto relative">
+		<SectionContainer class="lg:sticky lg:left-0 top-[8dvh] md:items-start relative h-fit">
+			<img src="/maruco.png" alt="foto mario mass" class="xl:size-40 size-36 max-w-full mb-4 rounded-full">
+			<h1 class=" text-4xl xl:text-5xl font-bold text-balance flex flex-col items-start text-[#E65A45]">
+				<span class="text-2xl text-[#62706A]">Hey, aquí</span>
 				Mario Mass
 			</h1>
 
-			<h2 class="text-3xl text-balance mt-4">Desarrollador Web profesional | Coordinador educativo</h2>
+			<ul class="xl:text-2xl text-base font-semibold text-gray-600/75 mt-2 lg:mt-4 flex flex-col justify-center gap-y-1">
+				<li class="list-none">💻 Desarrollador web profesional</li>
+				<li class="list-none">👨‍🏫 Coordinador educativo</li>
+				<li class="list-none">🚩 De <span class="ar">Argentina</span></li>
+			</ul>
 
-			<nav class="flex gap-4 mt-12 flex-wrap">
+			<nav class="flex flex-col gap-4 mt-8 xl:mt-12 ">
 				<SocialPill href="https://linkedin.com/in/mario-massonnat">
-				  <Linkedin class="size-4 md:size-6" />
+				  <LinkedIn class="size-4 md:size-5" />
 				  LinkedIn
 				</SocialPill>
 				<SocialPill href="https://github.com/MarucoMass">
@@ -38,26 +44,35 @@ import Jobs from '../components/Jobs.astro';
 			  </nav>
 		</SectionContainer>
 
-		<SectionContainer class="">
-			<p class="text-6xl font-extrabold text-pretty mb-16"><span class="text-[#2394e5]">+3 años</span> de trayectoria transformando ideas en sitios web y desarrollando interfaces intuitivas </p>
-			<p class="text-6xl font-extrabold text-pretty"><span class="text-[#2394e5]">+1300 personas</span> aprendieron desarrollo web bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar" </p>
-		</SectionContainer>
-
-		
-
-		<SectionContainer id="experiencia" class="">
-			<h1 class="uppercase text-9xl font-bold">Experiencia</h1>
-
-			<article class="grid grid-cols-2 relative mt-32">
-				<h2 class="text-6xl font-semibold sticky h-fit top-[15dvh] uppercase">Laboral</h2>
-				<ExperienceList />
-					<!-- <Jobs /> -->
+<div class="">
+	<Header />
 	
-			</article>
-		</SectionContainer>
+	<SectionContainer class="gap-y-12 ">
+		<p class="lg:text-4xl text-2xl font-extrabold text-black/75 text-pretty bg-[hsl(153,60%,65%)] p-8 rounded-[35px] shadow-md">
+			<span class="text-white">+3 años</span> de trayectoria transformando ideas en sitios web y desarrollando interfaces intuitivas 
+		</p>
+		<p class="lg:text-4xl text-2xl font-extrabold text-black/75 text-pretty bg-[hsl(153,60%,65%)] p-8 rounded-[35px] shadow-md">
+			<span class="text-white">+1300 personas</span> aprendieron desarrollo web bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar" 
+		</p>
+	</SectionContainer>
+	
+	
+	
+	<SectionContainer id="experiencia" class="">
+		<h1 class="text-4xl lg:text-5xl font-bold mb-10 text-[#62706A]">Experiencia</h1>
+		
+	
+			<h2 class="text-4xl font-medium mb-7">Laboral</h2>
+			<ExperienceList class="" />
+			<h2 class="text-4xl font-medium mb-7">Educativa</h2>
+			<ExperienceList class="" />
+			<!-- <Jobs /> -->
 
-
-	</main>
+	</SectionContainer>
+</div>
+	
+	
+</main>
 </Layout>
 
 <style>
@@ -70,5 +85,24 @@ import Jobs from '../components/Jobs.astro';
 		font-size: 20px;
 		line-height: 1.6;
 	} */
-	
+
+
+	/* 
+	#62706A
+	#59F0AB
+	#6DB091
+	#E65A45
+	*/
+
+	.arg{
+		background-image: linear-gradient(
+		#2394e5 15%,
+		white 66%,
+		#2394e5 15%
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-repeat: no-repeat;
+	}
 </style>
