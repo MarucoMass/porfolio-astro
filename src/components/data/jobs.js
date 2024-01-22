@@ -17,5 +17,14 @@ export const JOBS = [
       link:"https://efectodigital.com.ar/", 
       img:"/efecto.webp"
     },
+    {
+      date: "Enero 2022 - Noviembre 2022",
+      title: "Web Developer",
+      company:"Freelancer",
+      description:
+        "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+      link:"https://efectodigital.com.ar/", 
+      img:"/efecto.webp"
+    },
   
   ]
