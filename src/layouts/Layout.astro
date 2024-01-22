@@ -25,28 +25,16 @@ const { title, description } = Astro.props;
   </body>
 </html>
 <style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-  /* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Seymour+One&display=swap"); */
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 10rem;
+    scroll-padding-top: 8rem;
   }
-body {
-  /* position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-  radial-gradient(
-    91% 146%,
-    rgba(255, 255, 255, 0.5) 47%,
-    rgba(0, 0, 0, 0.5) 100%
-    );
-    background-blend-mode: screen; */
-    /* min-height: 100dvh; */
-    /* font-family: "Plus Jakarta Sans", sans-serif; */
-    background-color: #fbfbfb;
-    font-family: 'Inter', sans-serif;
+  body {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-color: #0d0d0d;
+    font-family: "Inter", sans-serif;
   }
 </style>

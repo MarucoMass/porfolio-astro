@@ -1,82 +1,96 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import SocialPill from '../components/SocialPill.astro';
-import LinkedIn from '../components/icons/LinkedIn.astro';
-import Github from '../components/icons/Github.astro';
-import Mail from '../components/icons/Mail.astro';
-import ExperienceList from '../components/ExperienceList.astro';
-import Jobs from '../components/Jobs.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import Github from "../components/icons/Github.astro";
+import Mail from "../components/icons/Mail.astro";
+import ExperienceList from "../components/ExperienceList.astro";
+import Jobs from "../components/Jobs.astro";
 ---
 
-<Layout 
-	title="Welcome to Astro."
-	description="Welcome to Astro."
->
-	<main class="grid grid-cols-1 md:grid-cols-2 px-10 max-w-7xl mx-auto relative">
-		<SectionContainer class="lg:sticky lg:left-0 top-[8dvh] md:items-start relative h-fit">
-			<img src="/maruco.png" alt="foto mario mass" class="xl:size-40 size-36 max-w-full mb-4 rounded-full">
-			<h1 class=" text-4xl xl:text-5xl font-bold text-balance flex flex-col items-start text-[#E65A45]">
-				<span class="text-2xl text-[#62706A]">Hey, aquí</span>
-				Mario Mass
-			</h1>
+<Layout title="Welcome to Astro." description="Welcome to Astro.">
+  <main
+    class="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:px-12 px-6 max-w-[1600px] mx-auto relative"
+  >
+    <SectionContainer
+      class="lg:sticky lg:left-0 top-[5dvh] items-start relative h-fit pb-2 "
+    >
+      <img
+        src="/maruco.png"
+        alt="foto mario mass"
+        class="xl:size-40 size-36 max-w-full mb-4 rounded-full"
+      />
+      <h1
+        class="text-4xl xl:text-5xl font-bold text-balance flex flex-col items-start text-black/75"
+      >
+        <span class="text-2xl text-[#62706A]">Hey, aquí</span>
+        Mario Mass
+      </h1>
 
-			<ul class="xl:text-2xl text-base font-semibold text-gray-600/75 mt-2 lg:mt-4 flex flex-col justify-center gap-y-1">
-				<li class="list-none">💻 Desarrollador web profesional</li>
-				<li class="list-none">👨‍🏫 Coordinador educativo</li>
-				<li class="list-none">🚩 De <span class="ar">Argentina</span></li>
-			</ul>
+      <ul
+        class="xl:text-xl text-base font-semibold text-gray-600/75 mt-2 lg:mt-4 flex flex-col justify-center gap-y-1"
+      >
+        <li class="list-none">💻 Desarrollador web profesional</li>
+        <li class="list-none">👨‍🏫 Coordinador educativo</li>
+        <li class="list-none">🚩 De <span class="ar">Argentina</span></li>
+      </ul>
 
-			<nav class="flex flex-col gap-4 mt-8 xl:mt-12 ">
-				<SocialPill href="https://linkedin.com/in/mario-massonnat">
-				  <LinkedIn class="size-4 md:size-5" />
-				  LinkedIn
-				</SocialPill>
-				<SocialPill href="https://github.com/MarucoMass">
-				  <Github class="size-4 md:size-6" />
-				  GitHub
-				</SocialPill>
-				<SocialPill href="mailto:miduga@gmail.com">
-				  <Mail class="size-4 md:size-6" />
-				  mariomass.dev@gmail.com
-				</SocialPill>
-			  </nav>
-		</SectionContainer>
+      <nav class="flex flex-col gap-4 mt-8 xl:mt-10">
+        <SocialPill href="https://linkedin.com/in/mario-massonnat">
+          <LinkedIn class="size-4 md:size-5" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/MarucoMass">
+          <Github class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:miduga@gmail.com">
+          <Mail class="size-4 md:size-6" />
+          mariomass.dev@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
 
-<div class="">
-	<Header />
-	
-	<SectionContainer class="gap-y-12 ">
-		<p class="lg:text-4xl text-2xl font-extrabold text-black/75 text-pretty bg-[hsl(153,60%,65%)] p-8 rounded-[35px] shadow-md">
-			<span class="text-white">+3 años</span> de trayectoria transformando ideas en sitios web y desarrollando interfaces intuitivas 
-		</p>
-		<p class="lg:text-4xl text-2xl font-extrabold text-black/75 text-pretty bg-[hsl(153,60%,65%)] p-8 rounded-[35px] shadow-md">
-			<span class="text-white">+1300 personas</span> aprendieron desarrollo web bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar" 
-		</p>
-	</SectionContainer>
-	
-	
-	
-	<SectionContainer id="experiencia" class="">
-		<h1 class="text-4xl lg:text-5xl font-bold mb-10 text-[#62706A]">Experiencia</h1>
-		
-	
-			<h2 class="text-4xl font-medium mb-7">Laboral</h2>
-			<ExperienceList class="" />
-			<h2 class="text-4xl font-medium mb-7">Educativa</h2>
-			<ExperienceList class="" />
-			<!-- <Jobs /> -->
+    <SectionContainer class="gap-y-24">
+      <Header />
 
-	</SectionContainer>
-</div>
-	
-	
-</main>
+      <SectionContainer class="flex-none grid grid-cols-1 xl:grid-cols-3 xl:grid-flow-row gap-3">
+        <p
+          class="xl:col-span-2 lg:text-2xl text-2xl font-medium text-black/75 text-pretty p-8 rounded-xl shadow-lg bg-white/55"
+        >
+          <span class="text-[#E65A45] text-4xl inline-block font-bold">+3 años</span> de experiencia transformando ideas
+          en sitios web y desarrollando interfaces intuitivas
+        </p>
+        <p
+          class="xl:row-span-3 lg:text-2xl text-2xl font-medium text-white/75 text-pretty p-8 rounded-xl shadow-lg bg-black/75"
+        >
+          <span class="text-[#E65A45] text-4xl inline-block font-bold">+100 personas</span> aprendieron desarrollo web
+          bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar"
+        </p>
+        <p
+          class="xl:col-span-2 xl:row-span-2 lg:text-2xl text-2xl font-medium text-black/75 text-pretty p-8 rounded-xl shadow-lg bg-slate-300/50"
+        >
+          <span class="text-[#E65A45] text-4xl inline-block font-bold">+1300 personas</span> aprendieron desarrollo web
+          bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar"
+        </p>
+      </SectionContainer>
+
+      <SectionContainer id="experiencia" class="">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-10 text-[#62706A]">
+          Experiencia
+        </h1>
+        <ExperienceList class="" />
+
+      </SectionContainer>
+
+    </SectionContainer>
+  </main>
 </Layout>
 
 <style>
-	/* main {
+  /* main {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
@@ -86,23 +100,45 @@ import Jobs from '../components/Jobs.astro';
 		line-height: 1.6;
 	} */
 
-
-	/* 
+  /* 
+    #9B736D
 	#62706A
 	#59F0AB
 	#6DB091
 	#E65A45
 	*/
 
-	.arg{
-		background-image: linear-gradient(
-		#2394e5 15%,
-		white 66%,
-		#2394e5 15%
-		);
-		-webkit-background-clip: text;
-		background-clip: text;
-		color: transparent;
-		background-repeat: no-repeat;
-	}
+  /* 
+negro claro #242424
+negro #0d0d0d
+*/
+
+  .arg {
+    background-image: linear-gradient(#2394e5 15%, white 66%, #2394e5 15%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+  }
+
+  .logros{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "dev dev dev cv"
+    "jun jun jun cv"
+    "jun jun jun cv";
+    background-color: #2394e5;
+  }
+
+  .logros p:first-child {
+    grid-area: dev;
+  }
+  .logros p:nth-child(2){
+    grid-area: cv;
+  }
+  .logros p:last-child{
+    grid-area: jun;
+  }
 </style>
