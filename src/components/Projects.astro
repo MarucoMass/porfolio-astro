@@ -1,0 +1,10 @@
+---
+import ProjectsItem from "./ProjectsItem.astro";
+import {PROJECTS} from "./data/projects.js";
+---
+
+{
+    PROJECTS.map(project => (
+        <ProjectsItem {...project}/>
+    ))
+}
