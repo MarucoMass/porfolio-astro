@@ -80,7 +80,7 @@ export const EDUCATIVE = [
     img:"/efecto.webp"
   },
   {
-    date: "Marzo 2014 - Enero 2020",
+    date: "Marzo 2014 - Agosto 2020",
     title: "Bachiller en Derecho",
     company:"Universidad Nacional de Rosario",
     description:

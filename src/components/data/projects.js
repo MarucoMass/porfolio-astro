@@ -1,12 +1,12 @@
 export const PROJECTS = [
     {
-      title: "Fintelligence",
+      title: "FinTelligence",
       technologies:"html, css, javascript",
       description:
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/fintelligence.webp"
+      img: "/assets/fintelligence.webp"
     },
     {
       title: "Plantilla de Landing Page",
@@ -15,7 +15,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/plantilla.webp"
+      img: "/assets/plantilla.webp"
     },
     {
       title: "Prospectiva",
@@ -24,7 +24,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/prospectiva.webp"
+      img: "/assets/prospectiva.webp"
     },
     {
       title: "Rpa-Works",
@@ -33,7 +33,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/rpa-works.webp"
+      img: "/assets/rpa-works.webp"
     },
     {
       title: "Flor de Irupé",
@@ -42,7 +42,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/irupe.webp"
+      img: "/assets/irupe.webp"
     },
     {
       title: "Frente Patria",
@@ -51,7 +51,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/frentepatria.webp"
+      img: "/assets/frentepatria.webp"
     },
     {
       title: "Pedal Store",
@@ -60,7 +60,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/pedalstore.webp"
+      img: "/assets/pedalstore.webp"
     },
     {
       title: "Musicasa",
@@ -69,7 +69,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/musicasa.webp"
+      img: "/assets/musicasa.webp"
     },
     {
       title: "Caida Libre",
@@ -78,7 +78,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/caidalibre.webp"
+      img: "/assets/caidalibre.webp"
     },
     {
       title: "Tira Tiro",
@@ -87,7 +87,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/tiratiro.webp"
+      img: "/assets/tiratiro.webp"
     },
     {
       title: "Hasta Las Muelas",
@@ -96,7 +96,7 @@ export const PROJECTS = [
         "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
       repository: "https://junior.org.ar/", 
       deployment: "https://junior.org.ar/", 
-      img: "../../../public/assets/hastalasmuelas.webp"
+      img: "/assets/hastalasmuelas.webp"
     },
   
   ]

@@ -12,10 +12,10 @@ import Projects from "../components/Projects.astro";
 
 <Layout title="Welcome to Astro." description="Welcome to Astro.">
   <main
-    class="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:px-12 px-6 max-w-[1600px] mx-auto relative"
+    class="grid grid-cols-1 gap-y-16 xl:grid-cols-2 md:px-12 px-6 max-w-[1600px] mx-auto relative"
   >
     <SectionContainer
-      class="lg:sticky lg:left-0 top-[5dvh] items-start relative h-fit pb-2 "
+      class="xl:sticky xl:left-0 top-[5dvh] items-start relative h-fit pb-2 "
     >
       <img
         src="/maruco.png"
@@ -37,8 +37,8 @@ import Projects from "../components/Projects.astro";
         <li class="list-none">🚩 De <span class="ar">Argentina</span></li>
       </ul>
 
-      <nav class="flex flex-col gap-4 mt-8 xl:mt-10">
-        <SocialPill href="https://linkedin.com/in/mario-massonnat">
+      <nav class="grid grid-cols-1 gap-3 mt-8 xl:mt-10 mx-auto md:mx-0">
+        <SocialPill href="https://linkedin.com/in/mario-massonnat" class="">
           <LinkedIn class="size-4 md:size-5" />
           LinkedIn
         </SocialPill>
@@ -46,7 +46,7 @@ import Projects from "../components/Projects.astro";
           <Github class="size-4 md:size-6" />
           GitHub
         </SocialPill>
-        <SocialPill href="mailto:miduga@gmail.com">
+        <SocialPill href="mailto:mariomass.dev@gmail.com" class="">
           <Mail class="size-4 md:size-6" />
           mariomass.dev@gmail.com
         </SocialPill>
@@ -58,18 +58,18 @@ import Projects from "../components/Projects.astro";
 
       <SectionContainer class="flex-none grid grid-cols-1 xl:grid-cols-3 xl:grid-flow-row gap-3 lg:mt-16">
         <p
-          class="xl:col-span-2 lg:text-xl font-medium text-black/75 text-pretty p-8 rounded-xl shadow-sm bg-white/55"
+          class="xl:col-span-2 lg:text-xl font-medium text-black/75 text-pretty p-6 rounded-xl shadow-sm bg-white/55"
         >
           <span class="text-[#E65A45] text-4xl inline-block font-bold">+2 años</span> de experiencia transformando ideas
           en sitios web y desarrollando interfaces intuitivas
         </p>
         <p
-          class="xl:row-span-3 lg:text-2xl font-medium text-white/75 text-pretty p-8 rounded-xl shadow-sm bg-black/75"
+          class="xl:row-span-3 lg:text-2xl font-medium text-white/75 text-pretty p-6 rounded-xl shadow-sm bg-black/75"
         >
           Contactame para poder trabajar juntos
         </p>
         <p
-          class="xl:col-span-2 xl:row-span-2 lg:text-xl font-medium text-black/75 text-pretty p-8 rounded-xl shadow-sm bg-slate-300/40"
+          class="xl:col-span-2 xl:row-span-2 lg:text-xl font-medium text-black/75 text-pretty p-6 rounded-xl shadow-sm bg-slate-300/40"
         >
           <span class="text-[#E65A45] text-4xl inline-block font-bold">+1300 personas</span> aprendieron desarrollo web
           bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar"
