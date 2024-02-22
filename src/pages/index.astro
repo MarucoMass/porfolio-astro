@@ -2,97 +2,28 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import SocialPill from "../components/SocialPill.astro";
-import LinkedIn from "../components/icons/LinkedIn.astro";
-import Github from "../components/icons/Github.astro";
-import Mail from "../components/icons/Mail.astro";
-import ExperienceList from "../components/ExperienceList.astro";
-import Projects from "../components/Projects.astro";
+import Aside from "../layouts/Aside.astro";
+import Experience from "../layouts/Experience.astro";
+import Projects from "../layouts/Projects.astro";
 ---
 
 <Layout title="Welcome to Astro." description="Welcome to Astro.">
   <main
-    class="grid grid-cols-1 gap-y-16 xl:grid-cols-2 md:px-12 px-6 max-w-[1600px] mx-auto relative"
+    class="grid grid-cols-1 gap-y-16 xl:grid-cols-2 md:px-12 px-8 max-w-[1600px] mx-auto relative"
   >
-    <SectionContainer
-      class="xl:sticky xl:left-0 top-[5dvh] items-start relative h-fit pb-2 "
-    >
-      <img
-        src="/maruco.png"
-        alt="foto mario mass"
-        class="xl:size-40 size-36 max-w-full mb-4 rounded-full"
-      />
-      <h1
-        class="text-4xl xl:text-5xl font-bold text-balance flex flex-col items-start text-black/75"
-      >
-        <span class="text-2xl text-[#62706A]">Hey, aquí</span>
-        Mario Mass
-      </h1>
+    <Aside />
 
-      <ul
-        class="xl:text-xl text-base font-semibold text-gray-600/75 mt-2 lg:mt-4 flex flex-col justify-center gap-y-1"
-      >
-        <li class="list-none">💻 Desarrollador web profesional</li>
-        <li class="list-none">👨‍🏫 Coordinador educativo</li>
-        <li class="list-none">🚩 De <span class="ar">Argentina</span></li>
-      </ul>
-
-      <nav class="grid grid-cols-1 gap-3 mt-8 xl:mt-10 mx-auto md:mx-0">
-        <SocialPill href="https://linkedin.com/in/mario-massonnat" class="">
-          <LinkedIn class="size-4 md:size-5" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/MarucoMass">
-          <Github class="size-4 md:size-6" />
-          GitHub
-        </SocialPill>
-        <SocialPill href="mailto:mariomass.dev@gmail.com" class="">
-          <Mail class="size-4 md:size-6" />
-          mariomass.dev@gmail.com
-        </SocialPill>
-      </nav>
-    </SectionContainer>
-
-    <SectionContainer class="gap-y-20">
+    <SectionContainer class="gap-y-20 mx-auto">
       <Header />
 
-      <SectionContainer class="flex-none grid grid-cols-1 xl:grid-cols-3 xl:grid-flow-row gap-3 lg:mt-16">
-        <p
-          class="xl:col-span-2 lg:text-xl font-medium text-black/75 text-pretty p-6 rounded-xl shadow-sm bg-white/55"
-        >
-          <span class="text-[#E65A45] text-4xl inline-block font-bold">+2 años</span> de experiencia transformando ideas
-          en sitios web y desarrollando interfaces intuitivas
-        </p>
-        <p
-          class="xl:row-span-3 lg:text-2xl font-medium text-white/75 text-pretty p-6 rounded-xl shadow-sm bg-black/75"
-        >
-          Contactame para poder trabajar juntos
-        </p>
-        <p
-          class="xl:col-span-2 xl:row-span-2 lg:text-xl font-medium text-black/75 text-pretty p-6 rounded-xl shadow-sm bg-slate-300/40"
-        >
-          <span class="text-[#E65A45] text-4xl inline-block font-bold">+1300 personas</span> aprendieron desarrollo web
-          bajo mi coordinación y tutoría en el programa educativo "Yo Puedo Programar"
-        </p>
-      </SectionContainer>
+      <h1 class="text-6xl font-extrabold text-black text-balance">
+        <span class="text-[#E65A45]">+3 años</span> de experiencia transformando ideas en sitios web y desarrollando interfaces intuitivas
+      </h1>
 
-      <SectionContainer id="experiencia" class="">
-        <h1 class="text-4xl lg:text-5xl font-bold mb-10 text-[#62706A]">
-          Experiencia
-        </h1>
-        <ExperienceList class="" />
-
-      </SectionContainer>
-
-      <SectionContainer id="proyectos" class="">
-        <h1 class="text-4xl lg:text-5xl font-bold mb-10 text-[#62706A]">
-          Proyectos
-        </h1>
-        <Projects />
-
-      </SectionContainer>
-
+      <Experience />
+      <Projects />
     </SectionContainer>
+
   </main>
 </Layout>
 
@@ -139,13 +70,7 @@ negro #0d0d0d
     background-color: #2394e5;
   }
 
-  .logros p:first-child {
-    grid-area: dev;
-  }
-  .logros p:nth-child(2){
-    grid-area: cv;
-  }
-  .logros p:last-child{
-    grid-area: jun;
-  }
+  /* h1{
+    font-size: clamp(1.55rem, 3rem, 4rem);
+  } */
 </style>

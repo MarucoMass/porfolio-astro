@@ -13,14 +13,14 @@ const { title, description, technologies, repository, deployment, img } =
 ---
 
 <!-- <div class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-white/75 dark:border-gray-900 dark:bg-gray-700"></div> -->
-<article class="grid grid-cols-1 xl:grid-cols-2  gap-2 mb-8">
+<article class="grid grid-cols-1 md:grid-cols-2  gap-2 mb-8">
   <h3
-    class="text-lg font-bold text-white bg-[#6DB091] flex flex-col justify-center  dark:text-white shadow-sm"
+    class="text-lg font-bold text-white/90 bg-cardTitle flex flex-col justify-center  dark:text-white shadow-sm"
   >
     {title}
   </h3>
   <p
-  class="text-base font-normal text-gray-700 bg-white/55 dark:text-gray-400 text-pretty shadow-sm xl:row-span-3"
+  class="text-base font-normal text-gray-700 bg-white/55 dark:text-gray-400 text-pretty shadow-sm md:row-span-3"
   >
   {description}
 </p>
@@ -29,7 +29,7 @@ class="text-base font-semibold text-gray-900 bg-white/55 dark:text-white shadow-
 >
 {technologies}
 </h4>
-<div class={`relative min-h-48 shadow-sm xl:row-span-2`}>
+<div class={`relative min-h-48 shadow-sm md:row-span-2`}>
   <img
     src={img}
     alt=`imágen de ${title}`

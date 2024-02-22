@@ -12,9 +12,9 @@ const { title, description, date, company, link, img } = Astro.props;
 ---
 
 <!-- <div class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-white/75 dark:border-gray-900 dark:bg-gray-700"></div> -->
-<article class="grid grid-cols-1 xl:grid-cols-2 grid-flow-row gap-2">
+<article class="grid grid-cols-1 md:grid-cols-2 gap-2">
   <h3
-    class="text-lg font-bold text-white bg-[#9B736D] xl:col-span-2 dark:text-white shadow-sm"
+    class="text-lg font-bold text-white/90 bg-cardTitle md:col-span-2 dark:text-white shadow-sm"
   >
     {title}
   </h3>
@@ -42,7 +42,7 @@ const { title, description, date, company, link, img } = Astro.props;
               />
             </div> :
             <p
-               class="text-base font-normal text-gray-700 bg-white/55 xl:col-span-2 dark:text-gray-400 text-pretty shadow-sm"
+               class="text-base font-normal text-gray-700 bg-white/55 md:col-span-2 dark:text-gray-400 text-pretty shadow-sm"
             >
               {description}
               { 
