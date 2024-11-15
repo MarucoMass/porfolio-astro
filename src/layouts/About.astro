@@ -1,0 +1,106 @@
+---
+import Heading from "../components/Heading.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+
+const stack = {
+  Frontend: [
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "JavaScript",
+    "jQuery",
+    "React JS",
+    "Bootstrap",
+  ],
+  Backend: ["PHP", "Python", "C#", ".NET"],
+  "Base de datos": ["SQL"],
+  "Herramientas y otras tecnologías": [
+    "Git",
+    "Figma",
+    "Wordpress",
+    "Salesforce",
+  ],
+  "Sistemas operativos": ["Windows", "Linux"],
+};
+
+---
+
+<SectionContainer id="sobre-mi" class="section">
+  <Heading>Sobre mí</Heading>
+  <p class="dark:text-white/90 mb-6 text-pretty text-xl">
+    Mi nombre es Mario Massonnat. Empecé a interesarme en la programación hace 5
+    años, mientras estudiaba la carrera de Derecho. Actualmente vivo en Rosario
+    y soy estudiante avanzado de la Tecnicatura Universitaria en Programación en
+    la Universidad Tecnológica Nacional. Soy un profesional creativo, proactivo,
+    responsable y con mucha predisposición para aprender nuevas tecnologías.
+  </p>
+
+  <h2 class="dark:text-white text-2xl font-bold mb-4">
+    No todo es programación...
+  </h2>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+  >
+    <div class="relative">
+      <img
+        src="/about/listen.jpg"
+        alt="Foto 1"
+        class="w-full h-full object-cover rounded-lg shadow-lg"
+      />
+    </div>
+    <div class="relative md:col-span-2">
+      <img
+        src="/about/roller.jpg"
+        alt="Foto 2"
+        class="w-full h-full object-cover rounded-lg shadow-lg"
+      />
+    </div>
+    <div class="relative md:col-span-1">
+      <img
+        src="/about/show-1.jpg"
+        alt="Foto 3"
+        class="w-full h-full object-cover rounded-lg shadow-lg"
+      />
+    </div>
+    <div class="relative md:col-span-2">
+      <img
+        src="/about/show-2.jpg"
+        alt="Foto 4"
+        class="w-full h-full object-cover rounded-lg shadow-lg"
+      />
+    </div>
+    <div class="relative md:col-span-2">
+      <img
+        src="/about/skate.jpg"
+        alt="Foto 5"
+        class="w-full h-full object-cover rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+
+  <section id="stack" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center md:text-left">
+      <h2
+        class="text-3xl font-bold text-center md:text-center text-gray-800 dark:text-white mb-8"
+      >
+        Mi Stack Tecnológico
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          Object.entries(stack).map(([category, techList]) => (
+            <div>
+              <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-4">
+                {category}
+              </h3>
+              <ul class="list-none space-y-3 font-medium text-gray-600 dark:text-gray-300">
+                {techList.map((tech) => (
+                  <li>{tech}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</SectionContainer>

@@ -5,52 +5,54 @@ import SectionContainer from "../components/SectionContainer.astro";
 import Aside from "../layouts/Aside.astro";
 import Experience from "../layouts/Experience.astro";
 import Projects from "../layouts/Projects.astro";
+import About from "../layouts/About.astro";
 ---
 
-<Layout title="Welcome to Astro." description="Welcome to Astro.">
+<Layout
+  title="Mario Mass - Programador profesional"
+  description="Porfolio de programador profesional"
+>
   <main
-    class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 md:px-12 px-6 max-w-[1600px] mx-auto relative "
+    class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 md:px-12 px-5 max-w-[1600px] mx-auto relative"
   >
     <Aside />
 
-    <SectionContainer class="gap-y-28 mx-auto">
+    <SectionContainer class="gap-y-28 mx-auto pb-20">
       <Header />
 
-      <h1 class="text-3xl md:text-6xl font-extrabold text-black dark:text-white/90 text-balance">
-        <span class="text-heading">+3 años</span> de experiencia transformando ideas en sitios web y desarrollando interfaces intuitivas
+      <h1
+        class="text-3xl md:text-6xl font-extrabold text-black dark:text-white/90 text-balance"
+      >
+        <span class="text-heading">+3 años</span> de experiencia transformando ideas
+        en sitios web, diseñando interfaces intuitivas y desarrollando soluciones
+        eficientes
       </h1>
 
       <Experience />
       <Projects />
+      <About />
     </SectionContainer>
 
+    <footer class="absolute bottom-0 w-full py-2">
+      <h4 class="dark:text-white text-center">
+        Mario Mass - <span id="year"></span>
+      </h4>
+    </footer>
+    
   </main>
 </Layout>
 
+<script>
+  // Este código se ejecutará directamente en el navegador
+  document.addEventListener("DOMContentLoaded", () => {
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+      yearElement.innerText = new Date().getFullYear().toString();
+    }
+  });
+</script>
+
 <style>
-  /* main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	} */
-
-  /* 
-    #9B736D
-	#62706A
-	#59F0AB
-	#6DB091
-	#E65A45
-	*/
-
-  /* 
-negro claro #242424
-negro #0d0d0d
-*/
-
   .arg {
     background-image: linear-gradient(#2394e5 15%, white 66%, #2394e5 15%);
     -webkit-background-clip: text;
@@ -59,18 +61,14 @@ negro #0d0d0d
     background-repeat: no-repeat;
   }
 
-  .logros{
+  .logros {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "dev dev dev cv"
-    "jun jun jun cv"
-    "jun jun jun cv";
+    grid-template-areas:
+      "dev dev dev cv"
+      "jun jun jun cv"
+      "jun jun jun cv";
     background-color: #2394e5;
   }
-
-  /* h1{
-    font-size: clamp(1.55rem, 3rem, 4rem);
-  } */
 </style>

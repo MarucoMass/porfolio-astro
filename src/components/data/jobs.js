@@ -10,10 +10,10 @@ export const JOBS = [
   },
   {
     date: "Diciembre 2022 - Actualidad",
-    title: "Web Developer & Business Developer",
+    title: "Web Developer",
     company: "Efecto Digital LLC",
     description:
-      "En mi rol como desarrollador web, me encargo de crear soluciones web seguras y confiables utilizando tecnologías como HTML, CSS, JavaScript, PHP y jQuery. También colaboro estrechamente con el equipo de negocios para identificar necesidades y proponer estrategias digitales que mejoren la experiencia de los clientes y el rendimiento del sitio.",
+      "En mi rol como desarrollador web, me encargo de crear soluciones web seguras y confiables utilizando tecnologías como HTML, CSS, JavaScript, PHP y jQuery.",
     link: "https://efectodigital.com.ar/",
     // img:"/efecto.webp"
   },
@@ -22,7 +22,7 @@ export const JOBS = [
     title: "Web Developer",
     company: "Freelancer",
     description:
-      "Desarrollé sitios web de alto rendimiento y responsivos utilizando HTML, CSS, JavaScript y Wordpress, aplicando las mejores prácticas de la industria para garantizar un código limpio y eficiente. Trabajé en proyectos tanto para pequeñas empresas como para emprendedores individuales, ayudando a mejorar su presencia en línea.",
+      "Desarrollé sitios web de alto rendimiento y responsivos utilizando HTML, CSS, JavaScript y Wordpress, aplicando las mejores prácticas de la industria para garantizar un código limpio y eficiente.",
     link: "https://efectodigital.com.ar/",
     // img:"/efecto.webp"
   },

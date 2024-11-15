@@ -1,11 +1,10 @@
 ---
 import SectionContainer from "../components/SectionContainer.astro";
 import ProjectsList from "../components/ProjectsList.astro";
+import Heading from "../components/Heading.astro";
 ---
 
-<SectionContainer id="proyectos" class="">
-    <h1 class="text-4xl lg:text-5xl font-extrabold mb-10 text-subHeading">
-      Proyectos
-    </h1>
-    <ProjectsList />
+<SectionContainer id="proyectos" class="section">
+  <Heading>Proyectos</Heading>
+  <ProjectsList />
 </SectionContainer>

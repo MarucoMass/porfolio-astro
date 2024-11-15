@@ -1,69 +1,110 @@
+---
+import Moon from "./icons/Moon.astro";
+import Sun from "./icons/Sun.astro";
+import Home from "./icons/Home.astro";
+---
+
 <header
-  class={`
-    max-w-4xl 
-    py-2 px-2 
-    sticky top-[5dvh] 
-    backdrop-blur-[10.5px] bg-slate-300/60
-    rounded-3xl z-50 
-`}
+  class="max-w-4xl py-2 px-1 sticky top-[5dvh] backdrop-blur-[10.5px] bg-slate-300/80 rounded-3xl z-50"
 >
   <nav
     class="flex flex-row flex-wrap items-center justify-around text-sm lg:text-base"
   >
-    <a
-      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
-      href="/">🏠</a
+    <li
+      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
     >
-    <a
-      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
-      href="#experiencia">experiencia</a
-    >
-    <a
-      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
-      href="#proyectos">proyectos</a
-    >
-    <a
-      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
-      href="#contacto">sobre mí</a
-    >
-    <button id="darkModeToggle">
-      <span
-        id="darkModeIcon"
-        class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
-        >🌙</span
+      <a
+        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
+        href="/"
       >
-    </button>
+      <span class="hidden">home</span>
+        <Home />
+      </a>
+    </li>
+    <li
+      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
+    >
+      <a
+        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
+        href="#experiencia"
+      >
+        experiencia
+      </a>
+    </li>
+    <li
+      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
+    >
+      <a
+        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
+        href="#proyectos"
+      >
+        proyectos
+      </a>
+    </li>
+    <li
+      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
+    >
+      <a
+        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
+        href="#sobre-mi"
+      >
+        sobre mí
+      </a>
+    </li>
+    <li
+      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
+    >
+      <button
+        id="darkModeToggle"
+        class=" px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
+      >
+        <span id="moon" class="hidden">
+          <Moon />
+        </span>
+        <span id="sun" class="hidden">
+          <Sun />
+        </span>
+      </button>
+    </li>
   </nav>
 </header>
 
 <script>
-  function toggleDarkMode() {
-    const htmlElement = document.documentElement;
-    // const icon = document.getElementById("darkModeIcon");
-    if (htmlElement.classList.contains("dark")) {
-      htmlElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      // icon.textContent = "🌙";
-    } else {
-      htmlElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      // icon.textContent = "☀️";
-    }
-  }
-
-  if (
-    localStorage.getItem("theme") === "dark" ||
-    (!localStorage.getItem("theme") &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    document.documentElement.classList.add("dark");
-    // icon.textContent = "☀️";
-  }
-
   document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.getElementById("darkModeToggle");
-    if (toggleButton) {
-      toggleButton.addEventListener("click", toggleDarkMode);
-    }
+    const htmlElement = document.documentElement;
+    const sunIcon = document.getElementById("sun");
+    const moonIcon = document.getElementById("moon");
+
+    const applyInitialTheme = () => {
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        htmlElement.classList.add("dark");
+        sunIcon?.classList.remove("hidden");
+      } else {
+        htmlElement.classList.remove("dark");
+        moonIcon?.classList.remove("hidden");
+      }
+    };
+
+    const toggleDarkMode = () => {
+      if (htmlElement.classList.contains("dark")) {
+        htmlElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        sunIcon?.classList.add("hidden");
+        moonIcon?.classList.remove("hidden");
+      } else {
+        htmlElement.classList.add("dark");
+        moonIcon?.classList.add("hidden");
+        sunIcon?.classList.remove("hidden");
+        localStorage.setItem("theme", "dark");
+      }
+    };
+
+    applyInitialTheme();
+    toggleButton?.addEventListener("click", toggleDarkMode);
   });
 </script>

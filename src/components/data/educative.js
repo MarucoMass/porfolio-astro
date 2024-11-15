@@ -4,7 +4,7 @@ export const EDUCATIVE = [
     title: "Tecnicatura Universitaria en Programación",
     company: "Universidad Tecnológica Nacional",
     description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+      "Durante el cursado de la carrera, he perfeccionado mis habilidades como programador, fortaleciendo tanto mi capacidad lógica como mi enfoque en la resolución de problemas. He adquirido una sólida base en el análisis, diseño y desarrollo de software. Actualmente, me encuentro próximo a iniciar el cuarto y último cuatrimestre.",
   },
   {
     date: "Mayo 2023",
@@ -75,7 +75,7 @@ export const EDUCATIVE = [
     title: "Bachiller en Derecho",
     company: "Universidad Nacional de Rosario",
     description:
-      "Como estudiante de Bachiller en Derecho, adquirí una sólida comprensión de los principios legales, la legislación vigente y las habilidades necesarias para interpretar y aplicar las leyes, complementadas con estudios sobre ética profesional y derechos humanos.",
+      "Como estudiante de Bachiller en Derecho, adquirí una sólida comprensión de los principios legales, la legislación vigente y las habilidades necesarias para interpretar y aplicar las leyes. No terminé la carrera porque decidí dedicarme completamente a la programación.",
   },
 ];
   

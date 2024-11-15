@@ -7,10 +7,10 @@ const { class: className } = Astro.props;
 ---
 
 <div class={`mb-6 flex flex-col gap-y-7 ${className}`}>
-  <h2 class="text-2xl lg:text-4xl font-bold dark:text-white/85">Laboral</h2>
+  <h2 class="text-2xl lg:text-4xl font-bold dark:text-white">Laboral</h2>
   {JOBS.map((job) => <ExperienceItem {...job} />)}
 
-  <h2 class="text-2xl lg:text-4xl font-bold mt-10 dark:text-white/85">
+  <h2 class="text-2xl lg:text-4xl font-bold mt-10 dark:text-white">
     Educativa
   </h2>
   {EDUCATIVE.map((education) => <ExperienceItem {...education} />)}
