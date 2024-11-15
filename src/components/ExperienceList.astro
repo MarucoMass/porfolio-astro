@@ -1,27 +1,17 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
-import {JOBS} from "./data/jobs.js";
-import {EDUCATIVE} from "./data/educative.js";
+import ExperienceItem from "./ExperienceItem.astro";
+import { JOBS } from "./data/jobs.js";
+import { EDUCATIVE } from "./data/educative.js";
 
-const {class:className} = Astro.props;
+const { class: className } = Astro.props;
 ---
 
-
-
 <div class={`mb-6 flex flex-col gap-y-7 ${className}`}>
-  <h2 class="text-2xl lg:text-4xl font-bold">Laboral</h2>
-    {
-     JOBS.map((job) => (
-          <ExperienceItem {...job} />
+  <h2 class="text-2xl lg:text-4xl font-bold dark:text-white/85">Laboral</h2>
+  {JOBS.map((job) => <ExperienceItem {...job} />)}
 
-      ))
-    }
-   
-    <h2 class="text-2xl lg:text-4xl font-bold mt-10">Educativa</h2>
-    {
-     EDUCATIVE.map((education) => (
-          <ExperienceItem {...education} />
-
-      ))
-    }
+  <h2 class="text-2xl lg:text-4xl font-bold mt-10 dark:text-white/85">
+    Educativa
+  </h2>
+  {EDUCATIVE.map((education) => <ExperienceItem {...education} />)}
 </div>

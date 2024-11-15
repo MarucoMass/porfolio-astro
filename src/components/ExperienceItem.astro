@@ -22,14 +22,14 @@ const { title, description, date, company, link, img } = Astro.props;
     {company}
   </h4>
   <time
-    class="text-base font-normal bg-white/55 text-gray-500 dark:text-gray-500 shadow-sm flex items-center"
+    class="text-base font-normal bg-white/55 text-gray-500 dark:text-gray-900 shadow-sm flex items-center"
     >{date}</time
   >
 
   {
       img ? 
             <p
-                class="text-base font-normal text-gray-700 bg-white/55 dark:text-gray-400 text-pretty shadow-sm"
+                class="text-base font-normal text-gray-700 bg-white/55 dark:text-gray-900 text-pretty shadow-sm"
               >
                 {description}
                 
@@ -38,15 +38,15 @@ const { title, description, date, company, link, img } = Astro.props;
               <img
                 src={img}
                 alt=`imágen de ${company}`
-                class="absolute inset-0 h-full w-full object-cover rounded-lg"
+                class="absolute inset-0 h-full w-full object-contain rounded-lg"
               />
             </div> :
             <p
-               class="text-base font-normal text-gray-700 bg-white/55 md:col-span-2 dark:text-gray-400 text-pretty shadow-sm"
+               class="text-base font-normal text-gray-700 bg-white/55 md:col-span-2 dark:text-gray-900 text-pretty shadow-sm"
             >
               {description}
               { 
-                link && <a href={link}>Visita el sitio</a>
+                // link && <a class="bg-gray-300 inline-block px-2 py-1 rounded-lg" href={link}>Visita el sitio</a>
               }
             </p>
   }

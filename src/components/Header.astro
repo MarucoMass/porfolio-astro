@@ -5,14 +5,65 @@
     sticky top-[5dvh] 
     backdrop-blur-[10.5px] bg-slate-300/60
     rounded-3xl z-50 
-    
 `}
 >
-  <nav class=" flex flex-row items-center justify-around text-sm lg:text-base ">
-    <a class="px-2 md:px-4 py-2 font-medium hover:bg-black/10 flex items-center justify-center cursor-pointer rounded-3xl transition" href="/">🏠</a>
-    <a class="px-2 md:px-4 py-2 font-medium hover:bg-black/10 flex items-center justify-center cursor-pointer rounded-3xl transition" href="#experiencia">experiencia</a>
-    <a class="px-2 md:px-4 py-2 font-medium hover:bg-black/10 flex items-center justify-center cursor-pointer rounded-3xl transition" href="#proyectos">proyectos</a>
-    <a class="px-2 md:px-4 py-2 font-medium hover:bg-black/10 flex items-center justify-center cursor-pointer rounded-3xl transition" href="#contacto">sobre mí</a>
-    <span class="px-2 md:px-4 py-2 font-medium hover:bg-black/10 flex items-center justify-center cursor-pointer rounded-3xl transition">🌙</span>
+  <nav
+    class="flex flex-row flex-wrap items-center justify-around text-sm lg:text-base"
+  >
+    <a
+      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
+      href="/">🏠</a
+    >
+    <a
+      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
+      href="#experiencia">experiencia</a
+    >
+    <a
+      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
+      href="#proyectos">proyectos</a
+    >
+    <a
+      class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
+      href="#contacto">sobre mí</a
+    >
+    <button id="darkModeToggle">
+      <span
+        id="darkModeIcon"
+        class="px-2 md:px-4 py-2 font-medium hover:bg-subHeading dark:hover:bg-cardTitle hover:text-white flex items-center justify-center cursor-pointer rounded-3xl transition active:bg-cardTitle"
+        >🌙</span
+      >
+    </button>
   </nav>
 </header>
+
+<script>
+  function toggleDarkMode() {
+    const htmlElement = document.documentElement;
+    // const icon = document.getElementById("darkModeIcon");
+    if (htmlElement.classList.contains("dark")) {
+      htmlElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      // icon.textContent = "🌙";
+    } else {
+      htmlElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      // icon.textContent = "☀️";
+    }
+  }
+
+  if (
+    localStorage.getItem("theme") === "dark" ||
+    (!localStorage.getItem("theme") &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+    // icon.textContent = "☀️";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("darkModeToggle");
+    if (toggleButton) {
+      toggleButton.addEventListener("click", toggleDarkMode);
+    }
+  });
+</script>

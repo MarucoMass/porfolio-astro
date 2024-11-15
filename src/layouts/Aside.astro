@@ -7,40 +7,42 @@ import Mail from "../components/icons/Mail.astro";
 ---
 
 <SectionContainer
-      class="xl:sticky xl:left-0 top-[5dvh] items-start relative h-fit pb-2 "
+  class="xl:sticky xl:left-0 top-[5dvh] items-center lg:items-start relative h-fit pb-4"
+>
+  <div>
+    <img
+      src="/maruco.png"
+      alt="foto mario mass"
+      class="xl:size-40 size-36 max-w-full mb-4 rounded-full object-cover bg-slate-400 shadow-sm"
+    />
+    <h1
+      class="text-4xl xl:text-5xl font-extrabold text-balance flex flex-col items-start text-black/75 dark:text-white/90"
     >
-      <img
-        src="/maruco.png"
-        alt="foto mario mass"
-        class="xl:size-40 size-36 max-w-full mb-4 rounded-full"
-      />
-      <h1
-        class="text-4xl xl:text-5xl font-extrabold text-balance flex flex-col items-start text-black/75"
-      >
-        <span class="text-2xl text-heading">Hey, aquí</span>
-        Mario Mass
-      </h1>
+      <span class="text-2xl text-heading">Hey, aquí</span>
+      Mario Mass
+    </h1>
 
-      <ul
-        class="xl:text-xl text-base font-semibold text-gray-600/75 mt-2 lg:mt-4 flex flex-col justify-center gap-y-1"
-      >
-        <li class="list-none">💻 Desarrollador web profesional</li>
-        <li class="list-none">👨‍🏫 Coordinador educativo</li>
-        <li class="list-none">🚩 De <span class="ar">Argentina</span></li>
-      </ul>
+    <ul
+      class="xl:text-xl text-base font-semibold text-gray-600 dark:text-white/80 mt-2 lg:mt-4 flex flex-col justify-center gap-y-1"
+    >
+      <li class="list-none">💻 Desarrollador web profesional</li>
+      <li class="list-none">👨‍🏫 Coordinador educativo</li>
+      <li class="list-none">🚩 De <span class="ar">Argentina</span></li>
+    </ul>
+  </div>
 
-      <nav class="grid grid-cols-1 gap-3 mt-8 xl:mt-8 mx-auto md:mx-0">
-        <SocialPill href="https://linkedin.com/in/mario-massonnat" class="">
-          <LinkedIn class="size-4 md:size-5" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/MarucoMass">
-          <Github class="size-4 md:size-6" />
-          GitHub
-        </SocialPill>
-        <SocialPill href="mailto:mariomass.dev@gmail.com" class="">
-          <Mail class="size-4 md:size-6" />
-          mariomass.dev@gmail.com
-        </SocialPill>
-      </nav>
-    </SectionContainer>
+  <nav class="grid grid-cols-1 gap-3 mt-8 xl:mt-8 mx-auto md:mx-0">
+    <SocialPill href="https://linkedin.com/in/mario-massonnat" class="">
+      <LinkedIn class="size-4 md:size-5" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/MarucoMass">
+      <Github class="size-4 md:size-6" />
+      GitHub
+    </SocialPill>
+    <SocialPill href="mailto:mariomass.dev@gmail.com" class="">
+      <Mail class="size-4 md:size-6" />
+      mariomass.dev@gmail.com
+    </SocialPill>
+  </nav>
+</SectionContainer>
