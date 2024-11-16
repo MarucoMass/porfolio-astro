@@ -44,7 +44,7 @@ export const PROJECTS = [
     title: "FinTelligence",
     technologies: "HTML, CSS, JavaScript",
     description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+      "Landing page que desarrollé para FinTelligence, expertos en diagnósticos económicos y finanzas. Encargo realizado por Efecto Digital.",
     deployment: "https://marucomass.github.io/fintelligence/",
     img: "/assets/fintelligence.webp",
   },
@@ -102,7 +102,7 @@ export const PROJECTS = [
     title: "Musicasa",
     technologies: "HTML, CSS, JavaScript",
     description:
-      "Proyecto de sitio web de cursos de música para el curso Javascript de Coderhouse.",
+      "Proyecto de sitio web de cursos de música para el curso de Javascript de Coderhouse.",
     repository: "https://github.com/MarucoMass/Musicasa-ecommerce",
     deployment: "https://marucomass.github.io/Musicasa-ecommerce/",
     img: "/assets/musicasa.webp",
