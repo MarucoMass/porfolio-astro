@@ -2,9 +2,11 @@
 import SectionContainer from "../components/SectionContainer.astro";
 import ProjectsList from "../components/ProjectsList.astro";
 import Heading from "../components/Heading.astro";
+
+const {projects, headings} = Astro.props;
 ---
 
-<SectionContainer id="proyectos" class="section">
-  <Heading>Proyectos</Heading>
-  <ProjectsList />
+<SectionContainer id={headings.toLowerCase()}  class="section">
+  <Heading>{headings}</Heading>
+  <ProjectsList projects={projects}/>
 </SectionContainer>

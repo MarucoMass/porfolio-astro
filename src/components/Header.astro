@@ -1,7 +1,7 @@
 ---
 import Moon from "./icons/Moon.astro";
 import Sun from "./icons/Sun.astro";
-// import Home from "./icons/Home.astro";
+const {headerData} = Astro.props;
 ---
 
 <header
@@ -10,47 +10,20 @@ import Sun from "./icons/Sun.astro";
   <nav
     class="flex flex-row flex-wrap items-center justify-around text-sm lg:text-base"
   >
-    <!-- <li
-      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
-    >
-      <a
-        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
-        href="/"
+  {
+    headerData.map(data => (
+      <li
+        class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
       >
-      <span class="hidden">home</span>
-        <Home />
-      </a>
-    </li> -->
-    <li
-      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
-    >
-      <a
-        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
-        href="#experiencia"
-      >
-        experiencia
-      </a>
-    </li>
-    <li
-      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
-    >
-      <a
-        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
-        href="#proyectos"
-      >
-        proyectos
-      </a>
-    </li>
-    <li
-      class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
-    >
-      <a
-        class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
-        href="#sobre-mi"
-      >
-        sobre mí
-      </a>
-    </li>
+        <a
+          class="px-2 md:px-4 py-2 font-medium hover:text-white flex items-center justify-center cursor-pointer"
+          href={`#${data.toLowerCase()}`} 
+        >
+          {data}
+        </a>
+      </li>
+    ))
+  }
     <li
       class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
     >
@@ -65,6 +38,18 @@ import Sun from "./icons/Sun.astro";
           <Sun />
         </span>
       </button>
+    </li>
+    <li class="list-none">
+     
+      <div class="flex justify-end p-4">
+        <select 
+          id="language-switcher" 
+          class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
+        >
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
     </li>
   </nav>
 </header>

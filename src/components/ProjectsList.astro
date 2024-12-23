@@ -1,10 +1,13 @@
 ---
+// import Projects from "../layouts/Projects.astro";
 import ProjectsItem from "./ProjectsItem.astro";
-import {PROJECTS} from "./data/projects.js";
+// import {PROJECTS} from "./data/projects.js";
+
+const {projects} = Astro.props;
 ---
 
 {
-    PROJECTS.map(project => (
+    projects.map(project => (
         <ProjectsItem {...project}/>
     ))
 }

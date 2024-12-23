@@ -6,11 +6,17 @@ import Aside from "../layouts/Aside.astro";
 import Experience from "../layouts/Experience.astro";
 import Projects from "../layouts/Projects.astro";
 import About from "../layouts/About.astro";
+import data from "../components/data/data.json";
+
+// Si el idioma no está en localStorage, usar "es" por defecto
+const lang = "es"; // Aquí el idioma se asigna inicialmente como "es" por defecto
+const content = data[lang];
+const { header, hero, jobs, education, headings, projects, about } = content;
 ---
 
 <Layout
   title="Mario Mass - Programador profesional"
-  description="Porfolio de programador profesional"
+  description="Portafolio de programador profesional"
 >
   <main
     class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 md:px-12 px-5 max-w-[1600px] mx-auto relative"
@@ -18,19 +24,15 @@ import About from "../layouts/About.astro";
     <Aside />
 
     <SectionContainer class="gap-y-28 mx-auto pb-20">
-      <Header />
+      <Header headerData={header}/>
 
-      <h1
-        class="text-3xl md:text-6xl font-extrabold text-black dark:text-white/90 text-balance"
-      >
-        <span class="text-heading">+3 años</span> de experiencia transformando ideas
-        en sitios web, diseñando interfaces intuitivas y desarrollando soluciones
-        eficientes
+      <h1 class="text-3xl md:text-6xl font-extrabold text-black dark:text-white/90 text-balance">
+        {hero}
       </h1>
 
-      <Experience />
-      <Projects />
-      <About />
+      <Experience jobs={jobs} education={education} headings={headings}/>
+      <Projects projects={projects} headings={headings[3]}/>
+      <About aboutData={about} headings={headings}/>
     </SectionContainer>
 
     <footer class="absolute bottom-0 w-full py-2">
@@ -38,37 +40,18 @@ import About from "../layouts/About.astro";
         Mario Mass - <span id="year"></span>
       </h4>
     </footer>
-    
   </main>
 </Layout>
 
 <script>
-  // Este código se ejecutará directamente en el navegador
   document.addEventListener("DOMContentLoaded", () => {
     const yearElement = document.getElementById("year");
     if (yearElement) {
       yearElement.innerText = new Date().getFullYear().toString();
     }
+
+    const lang = localStorage.getItem("lang") || "es"; 
+    localStorage.setItem("lang", lang);
+
   });
 </script>
-
-<style>
-  .arg {
-    background-image: linear-gradient(#2394e5 15%, white 66%, #2394e5 15%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
-  }
-
-  .logros {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "dev dev dev cv"
-      "jun jun jun cv"
-      "jun jun jun cv";
-    background-color: #2394e5;
-  }
-</style>

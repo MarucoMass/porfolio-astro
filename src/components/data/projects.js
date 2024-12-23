@@ -27,7 +27,7 @@ export const PROJECTS = [
     title: "MDS 3D",
     technologies: "HTML, CSS, JavaScript, PHP",
     description:
-      "Landing page que desarrollé para MDS3D, empresa experta en modelado 3D. Encargo realizado por Efecto Digital.",
+      "Sitio web que desarrollé para MDS3D, empresa experta en modelado 3D. Encargo realizado por Efecto Digital.",
     deployment: "https://www.mds3d.com.ar/",
     img: "/assets/mds.webp",
   },
@@ -44,7 +44,7 @@ export const PROJECTS = [
     title: "FinTelligence",
     technologies: "HTML, CSS, JavaScript",
     description:
-      "Landing page que desarrollé para FinTelligence, expertos en diagnósticos económicos y finanzas. Encargo realizado por Efecto Digital.",
+      "Sitio web que desarrollé para FinTelligence, expertos en diagnósticos económicos y finanzas. Encargo realizado por Efecto Digital.",
     deployment: "https://marucomass.github.io/fintelligence/",
     img: "/assets/fintelligence.webp",
   },
@@ -61,7 +61,7 @@ export const PROJECTS = [
     title: "Prospectiva",
     technologies: "HTML, CSS, JavaScript, jQuery, PHP",
     description:
-      "Landing page que desarrollé para Prospectiva, expertos en generar oportunidades en el sector inmobiliario. Encargo realizado por Efecto Digital.",
+      "Sitio web que desarrollé para Prospectiva, expertos en generar oportunidades en el sector inmobiliario. Encargo realizado por Efecto Digital.",
     deployment: "https://prospectiva.tech/",
     img: "/assets/prospectiva.webp",
   },
@@ -69,7 +69,7 @@ export const PROJECTS = [
     title: "Rpa-Works",
     technologies: "HTML, CSS, JavaScript, PHP",
     description:
-      "Landing page que desarrollé para RPA-Works, empresa de automatización de tareas con robots de software. Encargo realizado por Efecto Digital.",
+      "Sitio web que desarrollé para RPA-Works, empresa de automatización de tareas con robots de software. Encargo realizado por Efecto Digital.",
     deployment: "https://rpa-works.com/",
     img: "/assets/rpa-works.webp",
   },

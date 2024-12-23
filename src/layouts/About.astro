@@ -2,6 +2,8 @@
 import Heading from "../components/Heading.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 
+const {aboutData, headings} = Astro.props;
+
 const stack = {
   Frontend: [
     "HTML5",
@@ -12,7 +14,7 @@ const stack = {
     "React JS",
     "Bootstrap",
   ],
-  Backend: ["PHP", "Python", "C#", ".NET"],
+  Backend: ["PHP", "Python", "C#", ".NET", "Laravel"],
   "Base de datos": ["MySQL, SQLite, SQLServer"],
   "Herramientas y otras tecnologías": [
     "Visual Studio",
@@ -26,18 +28,19 @@ const stack = {
 };
 ---
 
-<SectionContainer id="sobre-mi" class="section">
-  <Heading>Sobre mí</Heading>
+<SectionContainer id={headings[4].toLowerCase()} class="section">
+  <Heading>{headings[4]}</Heading>
   <p class="dark:text-white/90 mb-6 text-pretty text-xl">
-    Mi nombre es Mario Massonnat. Empecé a interesarme en la programación hace 5
+    <!-- Mi nombre es Mario Massonnat. Empecé a interesarme en la programación hace 5
     años, mientras estudiaba la carrera de Derecho. Actualmente vivo en Rosario
     y soy estudiante avanzado de la Tecnicatura Universitaria en Programación en
     la Universidad Tecnológica Nacional. Soy un profesional creativo, proactivo,
-    responsable y con mucha predisposición para aprender nuevas tecnologías.
+    responsable y con mucha predisposición para aprender nuevas tecnologías. -->
+    {aboutData}
   </p>
 
   <h2 class="dark:text-white text-2xl font-bold mb-4">
-    No todo es programación...
+    {headings[5]}...
   </h2>
   <!-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
     <div class="relative sm:col-span-2 row-span-2">
@@ -129,7 +132,7 @@ const stack = {
       <h2
         class="text-3xl font-bold text-center md:text-center text-gray-800 dark:text-white mb-8"
       >
-        Mi Stack Tecnológico
+        Stack 💻
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {
