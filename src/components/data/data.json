@@ -1,7 +1,7 @@
 {
   "es": {
     "header": ["Experiencia", "Proyectos", "Sobre mí"],
-    "aside": ["Programador fullstack", "Coordinador educativo", "De Argentina"],
+    "aside": ["Programador fullstack profesional", "Coordinador educativo", "De Argentina"],
     "hero": "+3 años de experiencia transformando ideas en sitios web, diseñando interfaces intuitivas y desarrollando soluciones eficientes",
     "jobs": [
       {
@@ -244,7 +244,7 @@
   "en": {
     "header": ["Experience", "Projects", "About Me"],
     "aside": [
-      "Fullstack Developer",
+      "Professional Fullstack Developer",
       "Educational Coordinator",
       "From Argentina"
     ],
