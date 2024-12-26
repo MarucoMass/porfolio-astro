@@ -7,7 +7,7 @@ const {projects} = Astro.props;
 ---
 
 {
-    projects.map(project => (
+    projects.map((project:any) => (
         <ProjectsItem {...project}/>
     ))
 }

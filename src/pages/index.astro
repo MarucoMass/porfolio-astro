@@ -8,8 +8,8 @@ import Projects from "../layouts/Projects.astro";
 import About from "../layouts/About.astro";
 import data from "../components/data/data.json";
 
-// Si el idioma no está en localStorage, usar "es" por defecto
-const lang = "es"; // Aquí el idioma se asigna inicialmente como "es" por defecto
+
+const lang = "en"; 
 const content = data[lang];
 const { header, hero, jobs, education, headings, projects, about } = content;
 ---

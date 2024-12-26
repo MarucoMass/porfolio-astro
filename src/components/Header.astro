@@ -11,7 +11,7 @@ const {headerData} = Astro.props;
     class="flex flex-row flex-wrap items-center justify-around text-sm lg:text-base"
   >
   {
-    headerData.map(data => (
+    headerData.map((data:any) => (
       <li
         class="list-none hover:bg-cardTitle active:bg-cardTitle rounded-3xl transition"
       >
