@@ -242,7 +242,7 @@
     ]
   },
   "en": {
-    "header": ["Experience", "Projects", "About Me"],
+    "header": ["Experience", "Projects", "About"],
     "aside": [
       "Professional Fullstack Developer",
       "Educational Coordinator",
@@ -483,7 +483,7 @@
       "Work",
       "Education",
       "Projects",
-      "About Me",
+      "About",
       "Not Everything is Programming"
     ]
   }

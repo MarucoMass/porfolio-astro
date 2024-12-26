@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         heading: "#513CF0",
-		subHeading: "#84A8CA",
+		    subHeading: "#84A8CA",
         cardTitle: "#3C60F0",
       },
     },
