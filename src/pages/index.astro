@@ -7,6 +7,7 @@ import Experience from "../layouts/Experience.astro";
 import Projects from "../layouts/Projects.astro";
 import About from "../layouts/About.astro";
 import data from "../components/data/data.json";
+import ButtonTop from "../components/ButtonTop.astro";
 
 
 const lang = "en"; 
@@ -15,15 +16,15 @@ const { header, hero, jobs, education, headings, projects, about, aside } = cont
 ---
 
 <Layout
-  title="Mario Mass - Programador profesional"
-  description="Portafolio de programador profesional"
+  title="Mario Mass - FullStack Developer"
+  description="FullStack Developer"
 >
   <main
     class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 md:px-12 px-5 max-w-[1600px] mx-auto relative"
   >
     <Aside asideData={aside}/>
 
-    <SectionContainer class="gap-y-28 mx-auto pb-20">
+    <SectionContainer class="gap-y-28 mx-auto pb-20" id="layoutContainer">
       <Header headerData={header}/>
 
       <h1 class="text-3xl md:text-6xl font-extrabold text-black dark:text-white/90 text-balance">
@@ -34,13 +35,16 @@ const { header, hero, jobs, education, headings, projects, about, aside } = cont
       <Projects projects={projects} headings={headings[3]}/>
       <About aboutData={about} headings={headings}/>
     </SectionContainer>
-
+    
     <footer class="absolute bottom-0 w-full py-2">
       <h4 class="dark:text-white text-center">
         Mario Mass - <span id="year"></span>
       </h4>
     </footer>
   </main>
+  
+ <ButtonTop />
+
 </Layout>
 
 <script>
@@ -52,6 +56,7 @@ const { header, hero, jobs, education, headings, projects, about, aside } = cont
 
     const lang = localStorage.getItem("lang") || "es"; 
     localStorage.setItem("lang", lang);
+
 
   });
 </script>

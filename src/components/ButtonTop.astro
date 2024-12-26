@@ -1,0 +1,32 @@
+<button id="btnTop" class="size-12  bg-slate-400 rounded-full sticky bottom-8 left-1/2 -translate-x-1/2 hidden">
+    <span class="block mx-auto">👆</span>
+  </button>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const resizeWindowAndShowBtn = () => {
+        const btnTop = document.getElementById("btnTop");
+        if (window.innerWidth < 1024) {
+         document.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+              btnTop?.classList.remove("hidden")
+            } else {
+              btnTop?.classList.add("hidden")
+            }
+          })
+          
+          btnTop?.addEventListener("click", () => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            
+          })
+        } else {
+          btnTop?.classList.add("hidden");
+        }
+      }
+  
+      window.addEventListener("resize", resizeWindowAndShowBtn);
+  
+  
+    });
+  </script>
