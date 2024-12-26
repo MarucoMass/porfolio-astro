@@ -11,7 +11,7 @@ import data from "../components/data/data.json";
 
 const lang = "en"; 
 const content = data[lang];
-const { header, hero, jobs, education, headings, projects, about } = content;
+const { header, hero, jobs, education, headings, projects, about, aside } = content;
 ---
 
 <Layout
@@ -21,7 +21,7 @@ const { header, hero, jobs, education, headings, projects, about } = content;
   <main
     class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 md:px-12 px-5 max-w-[1600px] mx-auto relative"
   >
-    <Aside />
+    <Aside asideData={aside}/>
 
     <SectionContainer class="gap-y-28 mx-auto pb-20">
       <Header headerData={header}/>
