@@ -6,7 +6,7 @@ import Aside from "../layouts/Aside.astro";
 import Experience from "../layouts/Experience.astro";
 import Projects from "../layouts/Projects.astro";
 import About from "../layouts/About.astro";
-import data from "../components/data/data.json";
+import data from "../data/data.json";
 import ButtonTop from "../components/ButtonTop.astro";
 
 
@@ -28,7 +28,7 @@ const { header, hero, jobs, education, headings, projects, about, aside } = cont
       <Header headerData={header}/>
 
       <h1 class="text-3xl md:text-6xl font-extrabold text-black dark:text-white/90 text-balance">
-        {hero}
+        <span class="text-heading">{hero.substring(0, 8)}</span> {hero.substring(8)}
       </h1>
 
       <Experience jobs={jobs} education={education} headings={headings}/>

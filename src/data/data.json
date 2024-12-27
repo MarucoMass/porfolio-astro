@@ -1,7 +1,7 @@
 {
   "es": {
     "header": ["Experiencia", "Proyectos", "Sobre mí"],
-    "aside": ["Programador fullstack profesional", "Coordinador educativo", "De Argentina"],
+    "aside": ["Programador FullStack profesional", "Coordinador educativo", "De Argentina"],
     "hero": "+3 años de experiencia transformando ideas en sitios web, diseñando interfaces intuitivas y desarrollando soluciones eficientes",
     "jobs": [
       {
@@ -103,6 +103,21 @@
       }
     ],
     "projects": [
+      {
+        "title": "Efecto Digital Landing Page",
+        "technologies": "HTML, CSS, JavaScript, PHP",
+        "description": "Landing page que diseñé y desarrollé para Efecto Digital, la agencia B2B en la que trabajo.",
+        "deployment":"https://efectodigital.com.ar/landing.html",
+        "img": "/assets/eflanding.webp"
+      },
+      {
+        "title": "Cliente HTTP CodeFetch",
+        "technologies": "React JS, Tailwind CSS, AXIOS, toastify",
+        "description": "Proyecto personal de cliente HTTP básico que permita realizar peticiones y probar diversos endpoints de APIs",
+        "repository": "https://github.com/MarucoMass/HTTPClient---CodeFetch",
+        "deployment":"https://marucomass.github.io/HTTPClient---CodeFetch/",
+        "img": "/assets/codefetch.webp"
+      },
       {
         "title": "AgriCargo - API Rest",
         "technologies": "C#, .NET, SQLite",
@@ -244,7 +259,7 @@
   "en": {
     "header": ["Experience", "Projects", "About"],
     "aside": [
-      "Professional Fullstack Developer",
+      "Professional FullStack Developer",
       "Educational Coordinator",
       "From Argentina"
     ],
@@ -349,6 +364,21 @@
       }
     ],
     "projects": [
+      {
+        "title": "Efecto Digital Landing Page",
+        "technologies": "HTML, CSS, JavaScript, PHP",
+        "description": "Landing page I designed and developed for Efecto Digital, the B2B agency I work at.",
+        "deployment":"https://efectodigital.com.ar/landing.html",
+        "img": "/assets/eflanding.webp"
+      },
+      {
+        "title": "HTTP Client CodeFetch",
+        "technologies": "React JS, Tailwind CSS, AXIOS, toastify",
+        "description": "Personal project for a basic HTTP client that allows making requests and testing various API endpoints.",
+        "repository": "https://github.com/MarucoMass/HTTPClient---CodeFetch",
+        "deployment":"https://marucomass.github.io/HTTPClient---CodeFetch/",
+        "img": "/assets/codefetch.webp"
+      },
       {
         "title": "AgriCargo - API Rest",
         "technologies": "C#, .NET, SQLite",
@@ -477,7 +507,7 @@
         "img": "/assets/hastalasmuelas.webp"
       }
     ],
-    "about": "My name is Mario Massonnat. I became interested in programming 5 years ago while studying Law. I currently live in Rosario and am an advanced student in the University Technician in Programming at the National Technological University. I am a creative, proactive, responsible professional with a strong willingness to learn new technologies.",
+    "about": "My name is Mario Massonnat. I became interested in programming 5 years ago while studying Law. I currently live in Rosario and I am an advanced student of the University Technical Degree in Programming at the National Technological University. I am a creative, proactive, responsible professional with a strong willingness to learn new technologies.",
     "headings": [
       "Experience",
       "Work",
