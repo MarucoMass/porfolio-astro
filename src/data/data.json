@@ -122,7 +122,7 @@
         "title": "AgriCargo - API Rest",
         "technologies": "C#, .NET, SQLite",
         "description": "API de AgriCargo, aplicación especializada en la gestion del transporte de granos exclusivamente por via maritima que desarrollamos con un compañero como trabajo final para la materia Programación 3 de la facultad.",
-        "repository": "https://github.com/MarucoMass/Agricargo-Frontend",
+        "repository": "https://github.com/MarucoMass/Agricargo-API",
         "img": "/assets/agricargo-back.webp"
       },
       {
@@ -383,7 +383,7 @@
         "title": "AgriCargo - API Rest",
         "technologies": "C#, .NET, SQLite",
         "description": "AgriCargo API, an application specialized in managing grain transport exclusively by sea, which we developed as a final project for the Programming 3 course at university.",
-        "repository": "https://github.com/MarucoMass/Agricargo-Frontend",
+        "repository": "https://github.com/MarucoMass/Agricargo-API",
         "img": "/assets/agricargo-back.webp"
       },
       {
