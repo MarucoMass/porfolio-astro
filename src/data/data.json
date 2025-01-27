@@ -401,6 +401,14 @@
         "img": "/assets/php-api.webp"
       },
       {
+        "title": "React JS Porfolio",
+        "technologies": "React JS, JavaScript, Framer Motion, tsParticles, ESLint, CI/CD (GitHub Actions), Jest, React Testing Library",
+        "description": "Portfolio developed as part of a React JS speedup, incorporating CI/CD concepts, testing, ESLint, and animations using Framer Motion and tsParticles.",
+        "deployment": "https://mariomass.netlify.app/",
+        "repository": "https://github.com/MarucoMass/my-portfolio-react",
+        "img": "/assets/porfolio.webp"
+      },
+      {
         "title": "MDS 3D",
         "technologies": "HTML, CSS, JavaScript, PHP",
         "description": "Website I developed for MDS3D, a company specializing in 3D modeling. Commissioned by Efecto Digital.",
