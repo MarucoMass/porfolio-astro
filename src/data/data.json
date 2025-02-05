@@ -365,6 +365,13 @@
     ],
     "projects": [
       {
+        "title": "Product stock Microservices",
+        "technologies": "Nest JS, Postgresql, MongoDB, RabbitMQ, Docker",
+        "description": "This project is a microservices-based system for managing product stock using NestJS.",
+        "repository": "https://github.com/MarucoMass/nestjs-microservices",
+        "img": "/assets/nestjs-micro.webp"
+      },
+      {
         "title": "Efecto Digital Landing Page",
         "technologies": "HTML, CSS, JavaScript, PHP",
         "description": "Landing page I designed and developed for Efecto Digital, the B2B agency I work at.",
