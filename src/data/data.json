@@ -366,7 +366,7 @@
     "projects": [
       {
         "title": "Product stock Microservices",
-        "technologies": "Nest JS, Postgresql, MongoDB, RabbitMQ, Docker",
+        "technologies": "NestJS, Postgresql, MongoDB, RabbitMQ, Docker",
         "description": "This project is a microservices-based system for managing product stock using NestJS.",
         "repository": "https://github.com/MarucoMass/nestjs-microservices",
         "img": "/assets/nestjs-micro.webp"
@@ -408,7 +408,7 @@
         "img": "/assets/php-api.webp"
       },
       {
-        "title": "React JS Porfolio",
+        "title": "React JS Portfolio",
         "technologies": "React JS, JavaScript, Framer Motion, tsParticles, ESLint, CI/CD (GitHub Actions), Jest, React Testing Library",
         "description": "Portfolio developed as part of a React JS speedup, incorporating CI/CD concepts, testing, ESLint, and animations using Framer Motion and tsParticles.",
         "deployment": "https://mariomass.netlify.app/",
