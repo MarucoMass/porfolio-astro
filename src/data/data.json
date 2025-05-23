@@ -28,7 +28,7 @@
       {
         "date": "Marzo 2018 - Noviembre 2019",
         "title": "Asistente jurídico",
-        "company": "Estudio jurídico Badalotti, Cristófaro & Cavalieri",
+        "company": "Grupo flex",
         "description": "Como asistente jurídico, brindé soporte administrativo a un equipo de abogados en un entorno de alto ritmo. Además de gestionar documentos, redactar correspondencia y coordinar citas, fui parte integral del proceso legal, colaborando en la preparación de audiencias y reuniones clave con clientes y testigos.",
         "link": "https://efectodigital.com.ar/"
       }
@@ -265,6 +265,12 @@
     ],
     "hero": "+3 years of experience transforming ideas into websites, designing intuitive interfaces, and developing efficient solutions.",
     "jobs": [
+      {
+        "date": "March 2024 - Present",
+        "title": "Backend Freelance",
+        "company": "Freelance Developer",
+        "description": "Development of custom backend functionalities according to requirements for Binamics company."
+      },
       {
         "date": "February 2023 - Present",
         "title": "Coordinator and Technical Facilitator of 'Yo Puedo Programar'",
