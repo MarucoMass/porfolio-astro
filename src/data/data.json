@@ -312,7 +312,7 @@
         "title": "ASP.NET Core 8 Web API: Clean architecture + Azure services ",
         "company": "Udemy - Jakub Kozera",
         "description": "This course helped me improve my skills in developing REST APIs using Clean Architecture. I learned to implement CQRS, write automated tests, and integrate Azure services to build clean, maintainable, and scalable applications.",
-        "img": "/diplomas/.net.png"
+        "img": "/diplomas/net.png"
       },
       {
         "date": "May 2023",
