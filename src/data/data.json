@@ -308,7 +308,7 @@
         "description": "During my degree program, I have honed my skills as a programmer, strengthening both my logical reasoning and problem-solving approach. I have gained a solid foundation in software analysis, design, as well as Scrum and Agile methodologies."
       },
       {
-        "date": "Feb 2025",
+        "date": "February 2025",
         "title": "ASP.NET Core 8 Web API: Clean architecture + Azure services ",
         "company": "Udemy - Jakub Kozera",
         "description": "This course helped me improve my skills in developing REST APIs using Clean Architecture. I learned to implement CQRS, write automated tests, and integrate Azure services to build clean, maintainable, and scalable applications.",
