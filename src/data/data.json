@@ -1,7 +1,11 @@
 {
   "es": {
     "header": ["Experiencia", "Proyectos", "Sobre mí"],
-    "aside": ["Programador Full Stack profesional", "Coordinador educativo", "De Argentina"],
+    "aside": [
+      "Programador Full Stack profesional",
+      "Coordinador educativo",
+      "De Argentina"
+    ],
     "hero": "+3 años de experiencia transformando ideas en sitios web, diseñando interfaces intuitivas y desarrollando soluciones eficientes",
     "jobs": [
       {
@@ -107,7 +111,7 @@
         "title": "Efecto Digital Landing Page",
         "technologies": "HTML, CSS, JavaScript, PHP",
         "description": "Landing page que diseñé y desarrollé para Efecto Digital, la agencia B2B en la que trabajo.",
-        "deployment":"https://efectodigital.com.ar/landing.html",
+        "deployment": "https://efectodigital.com.ar/landing.html",
         "img": "/assets/eflanding.webp"
       },
       {
@@ -115,7 +119,7 @@
         "technologies": "React JS, Tailwind CSS, AXIOS, toastify",
         "description": "Proyecto personal de cliente HTTP básico que permita realizar peticiones y probar diversos endpoints de APIs",
         "repository": "https://github.com/MarucoMass/HTTPClient---CodeFetch",
-        "deployment":"https://marucomass.github.io/HTTPClient---CodeFetch/",
+        "deployment": "https://marucomass.github.io/HTTPClient---CodeFetch/",
         "img": "/assets/codefetch.webp"
       },
       {
@@ -258,35 +262,38 @@
   },
   "en": {
     "header": ["Experience", "Projects", "About"],
-    "aside": [
-      "Professional Full Stack Developer",
-      "Educational Coordinator",
-      "From Argentina"
-    ],
+    "aside": ["Professional Full Stack Developer", "From Argentina"],
     "hero": "+3 years of experience transforming ideas into websites, designing intuitive interfaces, and developing efficient solutions.",
     "jobs": [
       {
-        "date": "March 2024 - Present",
+        "date": "September 2025 - Present",
+        "title": "Full Stack Developer",
+        "company": "Grupo Gamma",
+        "description": "Full Stack Developer at Grupo Gamma, a leading integrated healthcare network in Rosario. I develop and maintain technological solutions to optimize medical processes, integrate systems, and enhance the experience of both patients and healthcare professionals.",
+        "link": "https://grupogamma.com/"
+      },
+      {
+        "date": "March 2024 - September 2025",
         "title": "Backend Freelance",
         "company": "Freelance Developer",
         "description": "Development of custom backend functionalities according to requirements for Binamics company."
       },
       {
-        "date": "February 2023 - Present",
+        "date": "February 2023 - September 2025",
         "title": "Coordinator and Technical Facilitator of 'Yo Puedo Programar'",
         "company": "Junior Achievement Foundation Santa Fe",
         "description": "'Yo Puedo Programar' is an educational program designed for high school students and teachers to introduce them to programming and web development. I currently work as a tutor and technical facilitator of the program. I am responsible for monitoring students on the virtual campus, correcting their work, and addressing their queries promptly.",
         "link": "https://junior.org.ar/"
       },
       {
-        "date": "December 2022 - Present",
+        "date": "December 2022 - September 2025",
         "title": "Web Developer",
         "company": "Efecto Digital LLC",
         "description": "As a web developer, I am responsible for creating secure and reliable web solutions using technologies such as HTML, CSS, JavaScript, PHP, and jQuery.",
         "link": "https://efectodigital.com.ar/"
       },
       {
-        "date": "January 2022 - November 2022",
+        "date": "January 2022 - September 2025",
         "title": "Web Developer",
         "company": "Freelancer",
         "description": "I developed high-performance, responsive websites using HTML, CSS, JavaScript, and WordPress, applying industry best practices to ensure clean and efficient code.",
@@ -388,7 +395,7 @@
         "title": "Efecto Digital Landing Page",
         "technologies": "HTML, CSS, JavaScript, PHP",
         "description": "Landing page I designed and developed for Efecto Digital, the B2B agency I work at.",
-        "deployment":"https://efectodigital.com.ar/landing.html",
+        "deployment": "https://efectodigital.com.ar/landing.html",
         "img": "/assets/eflanding.webp"
       },
       {
@@ -396,7 +403,7 @@
         "technologies": "React JS, Tailwind CSS, AXIOS, toastify",
         "description": "Personal project for a basic HTTP client that allows making requests and testing various API endpoints.",
         "repository": "https://github.com/MarucoMass/HTTPClient---CodeFetch",
-        "deployment":"https://marucomass.github.io/HTTPClient---CodeFetch/",
+        "deployment": "https://marucomass.github.io/HTTPClient---CodeFetch/",
         "img": "/assets/codefetch.webp"
       },
       {
