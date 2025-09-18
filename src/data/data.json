@@ -385,6 +385,21 @@
     ],
     "projects": [
       {
+        "title": "BEMify",
+        "technologies": "TypeScript, Node.js, VSCode Extension API",
+        "description": "A Visual Studio Code extension that helps developers generate and manage BEM (Block Element Modifier) class names consistently in their projects, improving productivity and code maintainability.",
+        "repository": "https://github.com/MarucoMass/BEMify",
+        "deployment": "https://marketplace.visualstudio.com/items?itemName=mario-mass.bemify",
+        "img": "/assets/bemify.jpg"
+      },
+      {
+        "title": "Python tool for massive WhatsApp sends",
+        "technologies": "Python, Streamlit, Pandas, Selenium",
+        "description": "A Streamlit-based application that allows users to send personalized WhatsApp messages in bulk. It supports Excel file uploads, dynamic message templates, and automated browser control for efficient message delivery.",
+        "repository": "https://github.com/MarucoMass/Python-App-Whatsapp-Masivo",
+        "img": "/assets/enviomasivopy.jpg"
+      },
+      {
         "title": "Product stock Microservices",
         "technologies": "NestJS, Postgresql, MongoDB, RabbitMQ, Docker",
         "description": "This project is a microservices-based system for managing product stock using NestJS.",
